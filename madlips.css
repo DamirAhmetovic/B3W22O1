@@ -1,0 +1,54 @@
+body{
+	background-color: black;
+	color: white;
+	margin-left: 35%;
+}
+
+.header{
+	font-size: 25px;
+	margin-left: 200px
+	font-family: 'Great Vibes', cursive;
+}
+
+.header2{
+	background-color: red;
+	color: black;
+	width: 600px;
+	height: 50px
+}
+
+.Onkunde{
+	color: white;
+	
+}
+
+
+.container{
+	background-color: white;
+	color: black;
+	width: 600px;
+}
+
+.footer{
+	color:white;
+	background-color: gray;
+	width: 600px;
+	margin-top: -16px;
+}
+
+.footerText{
+	margin-left: 40%;
+}
+
+
+.footer2{
+	color:white;
+	background-color: gray;
+	width: 600px;
+	margin-top: -16px;
+}
+
+
+.footerText2{
+	margin-left: 40%;
+}
