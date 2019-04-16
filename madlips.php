@@ -12,7 +12,8 @@
     <div class="header2"> <p class="Onkunde"> er heerst paniek... Onkunde</p> </div>
 
     <div class="container">
-        
+
+     
 
     <?php
      function test_input($data) {
@@ -39,9 +40,9 @@
                 $huisdierErr = "Only letters and white space allowed"; 
             }
     }
-}
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+
         if (empty($_POST["persoon"])) {
             $persoonErr = "persoon is required";
     }
@@ -51,9 +52,9 @@
                 $persoonErr = "Only letters and white space allowed"; 
             }
     }
-}
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+
         if (empty($_POST["land"])) {
             $landErr = "land is required";
     }
@@ -63,9 +64,9 @@
                 $landErr = "Only letters and white space allowed"; 
             }
     }
-}
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+
         if (empty($_POST["verveelt"])) {
             $verveeltErr = "verveelt is required";
     }
@@ -75,9 +76,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $verveeltErr = "Only letters and white space allowed"; 
             }
     }
-}
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+
         if (empty($_POST["speelgoed"])) {
             $speelgoedErr = "speelgoed is required";
     }
@@ -87,9 +88,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $speelgoedErr = "Only letters and white space allowed"; 
             }
     }
-}
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+
         if (empty($_POST["spijbel"])) {
             $spijbelErr = "spijbel is required";
     }
@@ -99,9 +100,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $spijbelErr = "Only letters and white space allowed"; 
             }
     }
-}
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+
         if (empty($_POST["kopen"])) {
             $kopenErr = "kopen is required";
     }
@@ -111,9 +112,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $kopenErr = "Only letters and white space allowed"; 
             }
     }
-}
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+
         if (empty($_POST["bezigheid"])) {
             $bezigheigErr = "bezigheid is required";
     }
@@ -125,7 +126,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-
+    if(empty($huisdier) or empty($persoon) or empty($land) or  empty($verveelt) or empty($speelgoed) or empty($spijbel) or empty($kopen) or empty($bezigheid)){
+             
     ?>
 
     <form class="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
@@ -165,6 +167,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="submit" value="Versturen">
         </form>
     </div>
+<?php
+    }
+?>
+
 
     <div>
         <?php 
